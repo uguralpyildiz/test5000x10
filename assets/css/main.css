@@ -620,13 +620,13 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  right: 0px;
   bottom: 15px;
   z-index: 99999;
   background-color: var(--accent-color);
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
+  width: 45px;
+  height: 45px;
+  border-radius: 5%;
   transition: all 0.4s;
 }
 
@@ -1367,13 +1367,13 @@ section,
   justify-content: center;
   position: fixed;
   bottom: 70px !important;
-  left: 10px;
+  right: 0px;
   height: 45px;
   width: 45px;
-  font-size: 20px;
+  font-size: 22px;
   z-index: 999;
   background-color: #24CC63;
-  border-radius: 50%;
+  border-radius:0px;
   color: #fff;
   box-shadow: 0 0 15px #00000020;
   animation: idle 1.3s ease infinite !important;
@@ -1381,20 +1381,20 @@ section,
 }
 
 .in-ab a{
-  bottom: 130px !important;
+  bottom: 115px !important;
   background: #d6249f;
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 .x-ab a{
-  bottom: 190px !important;
+  bottom: 160px !important;
   background-color: #000000;
 }
 .lin-ab a{
-  bottom: 250px !important;
+  bottom: 205px !important;
   background: #0A66C2;
 }
 .m-ab a{
-  bottom: 310px !important;
+  bottom: 250px !important;
   background-color: #cc9724;
 }
 @keyframes idle {
