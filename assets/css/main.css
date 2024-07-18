@@ -1366,7 +1366,7 @@ section,
   align-items: center;
   justify-content: center;
   position: fixed;
-  bottom: 30px;
+  bottom: 70px !important;
   right: 10px;
   height: 65px;
   width: 65px;
@@ -1376,21 +1376,21 @@ section,
   border-radius: 50%;
   color: #fff;
   box-shadow: 0 0 15px #00000020;
-  animation: idle 1.3s ease infinite;
+  animation: idle 1.3s ease infinite !important;
   text-decoration: none;
 }
 
 @keyframes idle {
   0% {
-      bottom: 30px;
+      bottom: 70px !important;
     }
   
     50% {
-      bottom: 25px;
+      bottom: 45px !important;
     }
   
     100% {
-      bottom: 30px;
+      bottom: 70px !important;
     }
 }
 @media (max-width: 575px) {
