@@ -179,7 +179,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(255, 255, 255, 0.95);
+  --background-color: rgb(255, 255, 255);
   --heading-color: #3c3c3c;
   --nav-color: #3c3c3c;
   --nav-hover-color: #3c3c3c;
@@ -677,9 +677,13 @@ h6 {
 }
 
 .page-title h1 {
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 500;
   margin-bottom: 10px;
+}
+.card-img-top{
+  object-fit: contain;
+  object-position: center;
 }
 
 .page-title .breadcrumbs ol {
@@ -1023,7 +1027,17 @@ section,
   position: relative;
   border-radius: 0;
 }
-
+.card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none !important;
+  background: #fff !important;
+  box-shadow: 0 0 15px #06060610;
+}
+.card img{
+  width: 160px !important;
+}
 .constructions .card-item .card-bg {
   min-height: 300px;
   position: relative;
@@ -1328,12 +1342,16 @@ section,
   margin: 0 10px;
   line-height: 1;
   margin-bottom: 5px;
+  
   transition: all 0.3s ease-in-out;
 }
 
 .projects .portfolio-filters li:hover,
 .projects .portfolio-filters li.filter-active {
   color: var(--accent-color);
+  background: var(--heading-color);
+  box-shadow: 0 0 15px #1D1F2880;
+  padding: 10px 15px;
 }
 
 .projects .portfolio-filters li:first-child {
