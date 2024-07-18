@@ -1361,16 +1361,16 @@ section,
 .projects .portfolio-filters li:last-child {
   margin-right: 0;
 }
-.wp-ab a {
+.wp-ab a,.in-ab a,.x-ab a,.lin-ab a,.m-ab a {
   display: flex;
   align-items: center;
   justify-content: center;
   position: fixed;
   bottom: 70px !important;
-  right: 10px;
-  height: 65px;
-  width: 65px;
-  font-size: 38px;
+  left: 10px;
+  height: 45px;
+  width: 45px;
+  font-size: 20px;
   z-index: 999;
   background-color: #24CC63;
   border-radius: 50%;
@@ -1380,6 +1380,23 @@ section,
   text-decoration: none;
 }
 
+.in-ab a{
+  bottom: 130px !important;
+  background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+.x-ab a{
+  bottom: 190px !important;
+  background-color: #000000;
+}
+.lin-ab a{
+  bottom: 250px !important;
+  background: #0A66C2;
+}
+.m-ab a{
+  bottom: 310px !important;
+  background-color: #cc9724;
+}
 @keyframes idle {
   0% {
       bottom: 70px !important;
@@ -2731,7 +2748,15 @@ section,
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
-
+input::placeholder, textarea::placeholder{
+  color: #494949 !important;
+}
+.wpcf7-form-control-wrap label{
+  margin-bottom: 10px;
+  font-size: 14px;
+  display: flex;
+  gap: 10px;
+}
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
