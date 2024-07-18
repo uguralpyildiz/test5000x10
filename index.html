@@ -11,7 +11,7 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
@@ -68,61 +68,70 @@
     </div>
   </header>
 
-  <main class="main">
+  <main class="main" style="overflow: hidden; " >
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <div class="info d-flex align-items-center">
-        <div class="container">
-          <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <div class="col-lg-6 text-center">
-              <h2>X10 Mimarlık</h2>
-              <p>
-                X10Mimarlık Olarak İnşaat Sektörü Dahil Daire İçi İç Mekan Tasarımı A dan Z ye Anahtar Teslim Tadilatlar
-                Yaparak Plan
-                Proje Dahilinde Bünyesinde Bulunan Mimar kadrosuyla Hizmet vermekteyiz.
-              </p>
-              <a href="#get-started" class="btn-get-started">Hadi Başlayalım</a>
-              <a href="stand-form.html" class="btn-get-started">Stand Talep Formu</a>
-            </div>
-          </div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="img-texts">
+          Ambiente 2024
         </div>
+        <img src="assets/img/hero-carousel/ambiente2024.jpg" />
       </div>
-
-      <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+      <div class="swiper-slide">
+        <div class="img-texts">
+          ATECH 2023
         </div>
-
-        <div class="carousel-item active">
-          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
-        </div>
-
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
-        </div>
-
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-4.jpg" alt="">
-        </div>
-
-        <div class="carousel-item">
-          <img src="assets/img/hero-carousel/hero-carousel-5.jpg" alt="">
-        </div>
-
-        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-        </a>
-
-        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-        </a>
-
+        <img src="assets/img/hero-carousel/atech2023.jpg" />
       </div>
-
-    </section><!-- /Hero Section -->
+      <div class="swiper-slide">
+        <div class="img-texts">
+         BALA
+        </div>
+        <img src="assets/img/hero-carousel/bala.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <div class="img-texts">
+         EMAPLAST
+        </div>
+        <img src="assets/img/hero-carousel/emaplast.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <div class="img-texts">
+         Green Global Group
+        </div>
+        <img src="assets/img/hero-carousel/greenglobal.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <div class="img-texts">
+         Maruderm
+        </div>
+        <img src="assets/img/hero-carousel/maruderm.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <div class="img-texts">
+         Olcay Etiket
+        </div>
+        <img src="assets/img/hero-carousel/olcayetiket.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <div class="img-texts">
+         Turan Plastik
+        </div>
+        <img src="assets/img/hero-carousel/turanplastik.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <div class="img-texts">
+         Ultimate
+        </div>
+        <img src="assets/img/hero-carousel/ultimate.jpg" />
+      </div>
+     
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    
+  </div>
 
     <!-- Get Started Section -->
     <section id="get-started" class="get-started section">
@@ -733,8 +742,24 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    effect: "cube",
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop:true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    autoplay: true,
+  });
+</script>
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
