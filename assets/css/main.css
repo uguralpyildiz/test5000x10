@@ -1729,7 +1729,13 @@ section,
   font-weight: 700;
   margin: 30px 0;
 }
-
+.col-md-12 label{
+  padding: 10px;
+  border-bottom: 1px solid orange;
+  border-radius: 50px;
+  background: #f8ffc6a2;
+  margin-bottom: 15px;
+}
 @media (min-width: 991px) {
   .about .inner-title {
     max-width: 65%;
