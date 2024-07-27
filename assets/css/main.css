@@ -156,6 +156,7 @@ h6 {
 .header .logo img {
   max-height: 32px;
   margin-right: 8px;
+  border-radius: 11px;
 }
 
 .header .logo h1 {
@@ -481,6 +482,7 @@ h6 {
 
 .footer .footer-about .logo img {
   max-height: 40px;
+  border-radius: 11px;
   margin-right: 6px;
 }
 
@@ -1419,11 +1421,19 @@ section,
 
 .projects .portfolio-content {
   position: relative;
+  background: linear-gradient(to bottom, #00000050, #00000020);
   overflow: hidden;
+
+  box-shadow: 0 0 15px #00000020;
 }
 
 .projects .portfolio-content img {
+  margin: auto;
   transition: 0.3s;
+  height: 500px !important;
+  object-fit: cover !important;
+  object-position: center;
+ 
 }
 
 .projects .portfolio-content .portfolio-info {
@@ -1733,7 +1743,7 @@ section,
   padding: 10px;
   border-bottom: 1px solid orange;
   border-radius: 50px;
-  background: #f8ffc6a2;
+  background: #f8ffc6af;
   margin-bottom: 15px;
 }
 @media (min-width: 991px) {
